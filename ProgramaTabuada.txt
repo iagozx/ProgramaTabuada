@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ProgramaTabuada
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Olá, peofessor Danilo");
+            Console.WriteLine("Digite o número da tabuada:");
+            int valor = Convert.ToInt32(Console.ReadLine());
+            for (int a = 0; a <= 10; a++)
+            {
+                Console.Write("{0} x {1} = {2}", a, valor, a * valor);
+            }
+            // fim do for
+
+            Console.Write("Obrigado por utilizar o programa. Clieque em enter para a finalização.");
+            Console.ReadKey();
+        }
+    }
+}
